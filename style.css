@@ -1,0 +1,86 @@
+#main {
+    margin-left: 120px;
+}
+
+.w3-row-padding img {
+    margin-bottom: 12px;
+}
+
+/*Definindo a largura e cor do sidebar*/
+.w3-sidebar {
+    width: 120px;
+    background: #222;
+}
+
+/*definindo Fonte para tags*/
+body,h1,h2,h3,h4,h5,h6 {
+    font-family:"Montserrat", sans-serif;
+}
+body { 
+    background-color: white;
+}
+
+/* Estilizaçao do w3 -hide-small, para que suma o sidebar em telas de celulares e só fique os traços para navegação*/
+@media only screen and (max-width:600px) {
+    #main {
+        margin-left: 0;
+    }
+}
+
+.doar-agora-button {
+    /* Estilize a aparência do botão */
+    background-color: red; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto branco */
+    padding: 10px 20px; /* Preenchimento do botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Indica área clicável */
+    position: absolute; /* Posicione o botão de forma absoluta */
+    top: 40px; /* Distância do topo da página */
+    right: 30px; /* Distância da borda esquerda da página */
+    z-index: 1; /* Garanta que o botão esteja em cima de outros elementos */
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 550px; /* ajuste conforme necessário */
+    margin: 0 auto;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    overflow: hidden;
+    height: 550px;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+  }
+  
+  .carousel-slide img:first-child {
+    display: block;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #prevBtn {
+    left: 0;
+  }
+  
+  #nextBtn {
+    right: 0;
+  }
+  
+
